@@ -1,10 +1,10 @@
 package com.example.testapp
 
 data class Data(
-    val access_token: String,
-    val phone: String,
-    val refresh_token: String,
-    val service_provider_id: Any,
-    val user_id: Int,
-    val user_profile_id: Any
+    var user_id: Int? = null,
+    var phone: String? = null,
+    var service_provider_id: Int? = null,
+    var user_profile_id: Int? = null,
+    var access_token: String? = null,
+    var refresh_token: String? = null
 )

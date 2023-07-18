@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:padding="24dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="35dp"
+        android:text="English"
+        android:textSize="14sp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/swap"
+        android:background="@drawable/roundercorners"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="9dp"
+        >
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/logintvid"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:text="Register"
+        android:textSize="32sp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        android:textColor="@color/blackheadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TvSubheading"
+        app:layout_constraintTop_toBottomOf="@id/logintvid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Let’s start by getting your account setup"
+        android:textSize="16sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/fistnameTv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvSubheading"
+        android:layout_marginTop="16dp"
+        android:textFontWeight="700"
+        android:text="First Name"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:padding="8dp"
+        android:text="Jenny"
+        android:textStyle="bold"
+        android:id="@+id/edittextfname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fistnameTv"
+        android:layout_marginTop="10dp"
+        android:layout_width="160dp"
+        android:background="@drawable/editextloginshape"
+        android:layout_height="55dp"
+
+        >
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/lastNameTv"
+        app:layout_constraintStart_toEndOf="@id/fistnameTv"
+        app:layout_constraintTop_toBottomOf="@id/TvSubheading"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="26dp"
+        android:textFontWeight="700"
+        android:text="Last Name"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:padding="15dp"
+        android:text="Wilson"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:id="@+id/edittextlanmetv"
+        app:layout_constraintStart_toStartOf="@id/lastNameTv"
+        app:layout_constraintTop_toBottomOf="@id/lastNameTv"
+
+        android:layout_width="160dp"
+        android:background="@drawable/editextloginshape"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/phonetxtv"
+        app:layout_constraintTop_toBottomOf="@id/edittextlanmetv"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Phone number"
+        android:textSize="14sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/phonnoEditTxtid"
+        app:layout_constraintTop_toBottomOf="@id/phonetxtv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edittextlanmetv"
+        android:layout_marginTop="10dp"
+        android:hint="      05XXXXXXXXXXX"
+        android:inputType="phone"
+        android:layout_width="355dp"
+        android:background="@drawable/editextloginshape"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paasswtxttv"
+        app:layout_constraintTop_toBottomOf="@id/phonnoEditTxtid"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Password"
+        android:textSize="14sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/paswordEditext"
+        app:layout_constraintTop_toBottomOf="@id/paasswtxttv"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/edittextlanmetv"
+
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="      ******************"
+        android:layout_width="355dp"
+        android:background="@drawable/editextloginshape"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/confirmpassTv"
+        app:layout_constraintTop_toBottomOf="@id/paswordEditext"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:text="Confirm Password"
+        android:textSize="14sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/confirmpaassEditext"
+        app:layout_constraintTop_toBottomOf="@id/confirmpassTv"
+        app:layout_constraintEnd_toEndOf="@id/edittextlanmetv"
+
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        android:inputType="textPassword"
+        android:hint="      ******************"
+        android:layout_width="355dp"
+        android:background="@drawable/editextloginshape"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/emailtvID"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/confirmpaassEditext"
+
+        android:layout_marginTop="10dp"
+        android:textFontWeight="700"
+        android:text="Email(optional)"
+        android:textSize="14sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/emailEdid"
+        android:layout_marginTop="10dp"
+        android:inputType="textEmailAddress"
+        android:hint="abcd@example.com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailtvID"
+        app:layout_constraintEnd_toEndOf="@id/edittextlanmetv"
+        android:layout_width="355dp"
+        android:background="@drawable/editextloginshape"
+        android:layout_height="55dp">
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        app:layout_constraintTop_toTopOf="@id/confirmpaassEditext"
+        app:layout_constraintEnd_toEndOf="@id/confirmpaassEditext"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:src="@drawable/passhideye"
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        app:layout_constraintTop_toTopOf="@id/paswordEditext"
+        app:layout_constraintEnd_toEndOf="@id/paswordEditext"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:src="@drawable/passhideye"
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/termscondioimgbtn"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailEdid"
+        app:layout_constraintBottom_toTopOf="@+id/regisBtnBottomId"
+
+        android:src="@drawable/tick_square"
+        android:layout_width="24dp"
+        android:layout_height="24dp">
+
+    </androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        app:layout_constraintStart_toEndOf="@id/termscondioimgbtn"
+        app:layout_constraintTop_toBottomOf="@id/emailEdid"
+        android:layout_marginTop="10dp"
+        android:id="@+id/termandconditonTvid"
+        android:layout_width="wrap_content"
+        android:text="I have accepted"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        app:layout_constraintStart_toEndOf="@id/termandconditonTvid"
+        app:layout_constraintTop_toBottomOf="@id/emailEdid"
+        android:layout_marginTop="10dp"
+        android:id="@+id/termandconditonBTNid"
+        android:layout_width="wrap_content"
+        android:text=" Terms &amp; Conditions"
+        android:textColor="@color/colorlightblue"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/regisBtnBottomId"
+        android:layout_width="355dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/roundercorners"
+        android:text="Register"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@id/emailEdid"
+        app:layout_constraintTop_toBottomOf="@id/termscondioimgbtn"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+
+        android:id="@+id/AlreadyHaveaCC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/regisBtnBottomId"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="Already have an account?"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="19dp"
+        android:textColor="#333333"
+        android:textFontWeight="700"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+    <TextView
+        android:id="@+id/LoginBtn"
+        app:layout_constraintTop_toTopOf="@id/AlreadyHaveaCC"
+        app:layout_constraintBottom_toBottomOf="@id/AlreadyHaveaCC"
+
+        app:layout_constraintStart_toEndOf="@id/AlreadyHaveaCC"
+
+        android:text="Login"
+        android:background="@color/trans"
+        android:textColor="#6EECC7"
+        android:textFontWeight="700"
+        android:layout_marginLeft="2dp"
+        android:textSize="14sp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

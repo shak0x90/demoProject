@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Tvlogin"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="96dp"
+        android:text="Verification"
+        android:textSize="32sp"
+        android:textFontWeight="700"
+        android:textStyle="bold"
+        android:textColor="@color/blackheadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TvSubheading"
+        app:layout_constraintTop_toBottomOf="@id/Tvlogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Enter your OTP code from your phone\n                   we just sent you"
+        android:textSize="16sp"
+        android:textFontWeight="500"
+        android:textColor="@color/subhadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Tvtimer"
+        app:layout_constraintTop_toBottomOf="@id/TvSubheading"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Resend in 1:00"
+        android:textColor="@color/greenligt"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </androidx.appcompat.widget.AppCompatTextView>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/EditTextOtp1"
+        android:text=""
+        android:textColor="@color/blackheadingtext"
+        android:textFontWeight="700"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/Tvtimer"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="74dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/otpshape"
+        android:layout_height="74dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/otpEditText2"
+        app:layout_constraintTop_toBottomOf="@id/Tvtimer"
+        app:layout_constraintStart_toEndOf="@id/EditTextOtp1"
+        android:layout_width="74dp"
+        android:layout_marginLeft="16dp"
+        android:text=""
+        android:textColor="@color/blackheadingtext"
+        android:textFontWeight="700"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/otpshape"
+        android:layout_height="74dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/otpEditText3"
+        app:layout_constraintTop_toBottomOf="@id/Tvtimer"
+        app:layout_constraintStart_toEndOf="@id/otpEditText2"
+        android:layout_width="74dp"
+        android:layout_marginLeft="16dp"
+
+        android:textColor="@color/blackheadingtext"
+        android:textFontWeight="700"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/otpshape"
+        android:layout_height="74dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/otpEditText4"
+        app:layout_constraintTop_toBottomOf="@id/Tvtimer"
+        app:layout_constraintStart_toEndOf="@id/otpEditText3"
+        android:layout_width="74dp"
+        android:layout_marginLeft="16dp"
+
+        android:textColor="@color/blackheadingtext"
+        android:textFontWeight="700"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/otpshape"
+        android:layout_height="74dp">
+
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/otpverifyContunueId"
+        android:layout_width="355dp"
+        android:layout_height="54dp"
+
+        android:background="@drawable/roundercorners"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otpEditText2"
+        >
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

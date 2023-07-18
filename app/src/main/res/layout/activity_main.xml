@@ -47,7 +47,7 @@
     </androidx.appcompat.widget.AppCompatTextView>
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/subheadertxtid"
+        android:id="@+id/TvSubheading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="To continue, first verify that it’s you"
@@ -70,7 +70,7 @@
         android:textFontWeight="500"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subheadertxtid">
+        app:layout_constraintTop_toBottomOf="@id/TvSubheading">
 
     </androidx.appcompat.widget.AppCompatTextView>
 
@@ -80,7 +80,8 @@
         android:layout_height="55dp"
         android:layout_marginTop="20dp"
         android:background="@drawable/editextloginshape"
-        android:hint="      05XXXXXXXXXXX"
+        android:hint="05XXXXXXXXXXX"
+        android:paddingStart="20dp"
         android:inputType="phone"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/phonetxtv">
@@ -145,7 +146,7 @@
         android:layout_width="match_parent"
         android:layout_height="54dp"
         android:layout_marginTop="5dp"
-        android:background="@drawable/editextloginshape"
+        android:background="@drawable/roundercorners"
         android:text="log in"
         android:textColor="@color/white"
         app:layout_constraintTop_toBottomOf="@id/forgotpaasbtn">

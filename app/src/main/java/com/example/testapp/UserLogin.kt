@@ -1,7 +1,7 @@
 package com.example.testapp
 
 data class UserLogin(
-    val `data`: Data,
-    val message: String,
-    val success: Boolean
+    var success: Boolean? = null,
+    var message: String? = null,
+    var data: Data? = null
 )
