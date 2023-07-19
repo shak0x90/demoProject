@@ -3,7 +3,7 @@ package com.example.testapp.mehedi.otp
 data class OtpRequsetModel(
 
 
-    val phone: String,
+    val is_forget_password: Boolean,
     val otp: String,
-    val is_forget_password: Boolean
+    val phone: String
 )

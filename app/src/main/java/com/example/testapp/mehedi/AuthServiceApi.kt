@@ -1,5 +1,8 @@
 package com.example.testapp.mehedi
 
+import com.example.testapp.mehedi.getServiceList.GetServiceModel
+import com.example.testapp.mehedi.otp.OtpRequsetModel
+import com.example.testapp.mehedi.otp.OtpResponseModel
 import com.example.testapp.mehedi.regitation.RegisterRequestModel
 import com.example.testapp.mehedi.regitation.RegisterResponseModel
 import retrofit2.Call
@@ -13,8 +16,10 @@ interface  AuthServiceApi {
     @POST("/api/v1/auth/user-register")
     fun userRegister(@Body registerRequestModel: RegisterRequestModel): Call<RegisterResponseModel>
 
-//    @POST("/api/v1/auth/verify-otp")
-//    fun verifyOTP(@Body otpRequestModel: OtpRequestModel): Call<OtpResponseModel>
+    @POST("/api/v1/auth/verify-otp")
+    fun verifyOTP(@Body otpRequestModel: OtpRequsetModel): Call<OtpResponseModel>
+
+    fun getServiceList():Call<GetServiceModel>
 
 
 }
