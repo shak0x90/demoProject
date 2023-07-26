@@ -23,7 +23,7 @@ import retrofit2.Response
 import java.io.File
 
 var ctoken = ""
-var userid = 0
+ var userid = 0
 
 class AdProduct : AppCompatActivity() {
 
@@ -53,7 +53,8 @@ class AdProduct : AppCompatActivity() {
         retrofitInstance = RetrofitInstance()
 
         var token = intent.getStringExtra("token").toString()
-         userid = intent.getStringExtra("id")?.toInt() ?: 0
+         userid = intent.getStringExtra("id")?.toInt()!!
+        Toast.makeText(this@AdProduct, "USer iD $userid", Toast.LENGTH_SHORT).show()
 
         binding.Btnuploadimg1.setOnClickListener {
             val pickImg = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
