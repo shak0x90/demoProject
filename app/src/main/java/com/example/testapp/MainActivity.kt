@@ -115,7 +115,7 @@ class MainActivity : AppCompatActivity() {
                 ) {
                     if (response.isSuccessful) {
                         Toast.makeText(this@MainActivity, "Successfully logged in", Toast.LENGTH_SHORT).show()
-                        val intent = Intent(this@MainActivity, MainActivity2::class.java)
+                        val intent = Intent(this@MainActivity, AdProduct::class.java).putExtra("token",response.body()?.data!!.access_token)
                         startActivity(intent)
 
 
