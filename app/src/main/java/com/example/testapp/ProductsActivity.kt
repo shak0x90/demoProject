@@ -42,7 +42,7 @@ class ProductsActivity : AppCompatActivity() {
 
 
     }
-
+//id dynamic
     private fun getProductList() {
         RetrofitClient.getService().getProductList(userid,ctoken).enqueue(object :
             Callback<GetProductResponse> {
