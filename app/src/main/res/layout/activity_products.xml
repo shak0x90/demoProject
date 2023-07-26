@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_marginTop="60dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".ProductsActivity">
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/Btnarrowback"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:background="@color/trans"
+        android:src="@drawable/baseline_arrow_back_24"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/TvHeading"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Add Product"
+        android:textSize="18sp"
+        android:textColor="@color/blackheadingtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnAddproduct"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TvHeading"
+        android:text="+Add Product"
+        android:textAllCaps="false"
+        android:textColor="@color/colorlightblue"
+        android:background="@drawable/editextloginshape"
+        android:layout_marginTop="32dp"
+        android:layout_width="355dp"
+        android:layout_height="55dp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <TextView
+        android:id="@+id/TvMyproducts"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/BtnAddproduct"
+        android:layout_marginTop="32dp"
+        android:text="My Products"
+        android:textColor="@color/blackheadingtext"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<androidx.core.widget.NestedScrollView
+    app:layout_constraintTop_toBottomOf="@id/TvMyproducts"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="18dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/reclyerVid"
+
+        tools:listitem="@layout/addproductscard"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

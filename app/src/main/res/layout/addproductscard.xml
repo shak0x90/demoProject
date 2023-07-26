@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="14dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:padding="15dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cr1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/trans"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ImgProuct"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/catimg3" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/TvPrName"
+            android:layout_width="191dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:text="Pedigree Adult Dry Dog Food, Chicken Flavor"
+            android:textColor="@color/blackheadingtext"
+            android:textSize="16sp"
+            android:textStyle="bold"
+
+            app:layout_constraintStart_toEndOf="@+id/cr1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/TvSr"
+            app:layout_constraintTop_toBottomOf="@id/TvPrName"
+            app:layout_constraintStart_toEndOf="@id/cr1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="SR"
+            android:textSize="18sp"
+            android:textColor="@color/greenligt"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/TvSrVal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/TvPrName"
+            app:layout_constraintStart_toEndOf="@id/TvSr"
+            android:text="50.00"
+            android:textSize="18sp"
+            android:textColor="@color/greenligt"
+            android:layout_marginStart="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
