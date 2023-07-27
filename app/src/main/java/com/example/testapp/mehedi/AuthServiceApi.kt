@@ -51,13 +51,14 @@ interface AuthServiceApi {
 //        @Part ("image")image4:MultipartBody.Part,
     ): Call<AddProductResponseModel>
 
-    @FormUrlEncoded
+    @Multipart
     @PATCH("/api/v1/product/{id}")
     fun updateProduct(
         @Path("id") id: Int,
         @Header("Authorization") token: String,
-        @Field("name") name: String,
-        @Field("price") price: Double
+        @Part("name") name: String,
+        @Part("price") price: Double,
+        @Part image:List<MultipartBody.Part>,
     ): Call<AddProductResponseModel>
 
     @DELETE("/api/v1/product/{id}")

@@ -85,13 +85,18 @@ class AdProduct : AppCompatActivity() {
             changeImage5.launch(pickImg)
         }
 
+        binding.BtnSkip.setOnClickListener {
+            val intent = Intent(this@AdProduct, ProductsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         binding.BtnSave.setOnClickListener {
             val bearer = "Bearer "
             token = bearer + token
             ctoken = token
             Log.i("token", token)
-            val productname = binding.EDproductname.text.toString()
+            val productname = binding.EDproductname.text.toString().trim()
             val producPrice: Double = binding.EDproductPrcie.text.toString().toDouble()
 
 

@@ -321,7 +321,21 @@
         android:background="@drawable/editextloginshape"
         android:layout_width="355dp"
         android:layout_height="60dp"/>
-    
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BtnSkip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/BtnSave"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="44dp"
+        android:textColor="@color/white"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:background="@drawable/roundercorners"
+        android:layout_width="343dp"
+        android:layout_height="54dp"/>
+
+
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/BtnSave"
         app:layout_constraintStart_toStartOf="parent"
